@@ -1,22 +1,24 @@
 # Tealium Angular Integration [Example]
 
-This example shows how to implement Tealium iQ with your Angular (aka "Angular 2") App.  The code is a "Provider" service using Typescript.
+* This example shows how to implement Tealium iQ with your Angular (aka "Angular 2") App.  The code is a "Provider" service using Typescript.
 
-This integration should be considered an example (for now) as opposed to an Angular library on NPM.
+* The service works well with the example App from Angular's CLI Quickstart: https://angular.io/docs/ts/latest/cli-quickstart.html
 
-If you are looking for previous integration using AngularJS, please see http://github.com/Tealium/integration-angularjs
+* This integration should be considered an example (for now) as opposed to an Angular library on NPM.
+
+* If you are looking for previous integration using AngularJS, please visite http://github.com/Tealium/integration-angularjs
 
 ## Summary
 
-The goal of this integration is to provide a simple wrapper for the Tealium utag.view and utag.link functions for use in Angular.  These functions are used to track link clicks and content view events in your App.  Tealium iQ is a Tag Management System which will subsequently execute "tags" (such as Google Analytics or Adobe Analytics) with the data layer passed through to these vendors.
+* The goal of this integration is to provide a simple wrapper for the Tealium utag.view and utag.link functions for use in Angular.  These functions are used to track link clicks and content view events in your App.  Tealium iQ is a Tag Management System (TMS) which will subsequently execute "tags" (such as Google Analytics or Adobe Analytics) with the data layer passed through to these vendors.
 
-The wrapper functions for use in an Angular app are 'this.tealium.view' and 'this.tealium.link'
+* The wrapper functions for use in an Angular app are 'this.tealium.view' and 'this.tealium.link'
 
-The data layer is passed as an object of key/value pairs to these functions.  The first tracking event call will also invoke asynchronous download of your client-specific utag.js file from Tealium's CDN.
+* The data layer is passed as an object of key/value pairs to these functions.  The first tracking event call will also invoke asynchronous download of your client-specific utag.js file from Tealium's CDN.
 
-The provider service definition is found in example/src/app/tealium/utag.service.ts
+* The provider service definition is found in example/src/app/tealium/utag.service.ts
 
-An example of how to configure and invoke the services (i.e. an example of this.tealium.view call) is found in example/src/app/app.component.ts
+* An example of how to configure and invoke the services (i.e. an example of this.tealium.view call) is found in example/src/app/app.component.ts
 
 ## Steps to Add the Tealium Utag Service to Your App
 
@@ -43,7 +45,7 @@ An example of how to configure and invoke the services (i.e. an example of this.
 
 * Only a specific set of tags in Tealium's Tag Marketplace support the utag.link event tracking and some (i.e. Google Analytics) will require mapping configuration
 
-* Visit community.tealium.com for more details on Tealium iQ and tag-specific configuration
+* Visit http://community.tealium.com for more details on Tealium iQ and tag-specific configuration
 
 
 ## Set Config
