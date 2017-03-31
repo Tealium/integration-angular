@@ -1,4 +1,4 @@
-## Tealium Angular Integration [Example]
+# Tealium Angular Integration [Example]
 
 This example shows how to implement Tealium iQ with your Angular (aka "Angular 2") App.  The code is a "Provider" service using Typescript.
 
@@ -6,7 +6,7 @@ This integration should be considered an example (for now) as opposed to an Angu
 
 If you are looking for previous integration using AngularJS, please see http://github.com/Tealium/integration-angularjs
 
-# Summary
+## Summary
 
 The goal of this integration is to provide a simple wrapper for the Tealium utag.view and utag.link functions for use in Angular.  These functions are used to track link clicks and content view events in your App.  Tealium iQ is a Tag Management System which will subsequently execute "tags" (such as Google Analytics or Adobe Analytics) with the data layer passed through to these vendors.
 
@@ -18,7 +18,7 @@ The provider service definition is found in example/src/app/tealium/utag.service
 
 An example of how to configure and invoke the services (i.e. an example of this.tealium.view call) is found in example/src/app/app.component.ts
 
-# Steps to Add the Tealium Utag Service to Your App
+## Steps to Add the Tealium Utag Service to Your App
 
 1. Create the /tealium directory below your /src/app/ folder in your Angular App
 
@@ -35,7 +35,7 @@ An example of how to configure and invoke the services (i.e. an example of this.
 ```
 
 
-# Additional Information and Troubleshooting
+## Additional Information and Troubleshooting
 
 * This module defines tealium.track which is a wrapper to utag.track
 
@@ -46,7 +46,7 @@ An example of how to configure and invoke the services (i.e. an example of this.
 * Visit community.tealium.com for more details on Tealium iQ and tag-specific configuration
 
 
-# Configuring Settings
+## Set Config
 
 The follow configuration settings are required and passed in to the 'setConfig' function
 
