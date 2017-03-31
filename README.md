@@ -16,9 +16,9 @@
 
 * The data layer is passed as an object of key/value pairs to these functions.  The first tracking event call will also invoke asynchronous download of your client-specific utag.js file from Tealium's CDN.
 
-* The provider service definition is found in example/src/app/tealium/utag.service.ts
+* The provider service definition is found in ./example/src/app/tealium/utag.service.ts
 
-* An example of how to configure and invoke the services (i.e. an example of this.tealium.track call) is found in example/src/app/app.component.ts
+* An example of how to configure and invoke the services (i.e. an example of this.tealium.track call) is found in ./example/src/app/app.component.ts
 
 ## Steps to Add the Tealium Utag Service to Your App
 
