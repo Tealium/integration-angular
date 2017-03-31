@@ -49,7 +49,7 @@
 
 * Only a specific set of tags in Tealium's Tag Marketplace support the "link" event tracking and some (i.e. Google Analytics) will require mapping configuration
 
-* Visit http://community.tealium.com for more details on Tealium iQ and tag-specific configuration
+* Visit http://tealium.com and http://community.tealiumiq.com for more details on Tealium iQ and tag-specific configuration
 
 
 ## Set Config
