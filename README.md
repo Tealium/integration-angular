@@ -59,9 +59,10 @@ The follow configuration settings are required and passed in to the 'setConfig' 
 - **##TEALIUM_ACCOUNT##** (String) Tealium iQ account
 - **##TEALIUM_PROFILE##** (String) Tealium iQ profile
 - **##TEALIUM_ENVIRONMENT##** (String) Tealium iQ environment ("dev", "qa", "prod")
+- **##TEALIUM_CDN##** (String) Tealium iQ CDN-URL (optional, Default value is 'https://tags.tiqcdn.com/utag/')
 
 ```javascript
   // The example in app.component.js shows how to configure
-  this.tealium.setConfig({ account: '##TEALIUM_ACCOUNT##', profile: '##TEALIUM_PROFILE##', environment: '##TEALIUM_ENVIRONMENT##' });
+  this.tealium.setConfig({ account: '##TEALIUM_ACCOUNT##', profile: '##TEALIUM_PROFILE##', environment: '##TEALIUM_ENVIRONMENT##', cdn: '##TEALIUM_CDN##' });
 ```
 
