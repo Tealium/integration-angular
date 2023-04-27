@@ -37,9 +37,10 @@ export class TealiumUtagService {
   }
 
   // Config settings used to build the path to the utag.js file
-  setConfig(config: {account: string, profile: string, environment: string}) {
+  setConfig(config: {account: string, profile: string, environment: string, cdn?: string}) {
+    config.cdn = config.cdn || 'https://tags.tiqcdn.com/utag/';
     if ( config.account !== undefined && config.profile !== undefined && config.environment !== undefined ) {
-      this.scriptSrc = 'https://tags.tiqcdn.com/utag/' + config.account + '/' + config.profile + '/' + config.environment + '/utag.js';
+      this.scriptSrc = config.cdn + config.account + '/' + config.profile + '/' + config.environment + '/utag.js';
     }
   }
 
