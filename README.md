@@ -8,8 +8,6 @@
 
 * This integration should be considered an example (for now) as opposed to an Angular library on NPM.
 
-* If you are looking for previous integration using AngularJS, please visite http://github.com/Tealium/integration-angularjs
-
 ## Summary
 
 * The goal of this integration is to provide a simple wrapper for the Tealium utag.track function for use in Angular.  This function is used to track link clicks and content view events in your App.
